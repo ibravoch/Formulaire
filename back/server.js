@@ -6,7 +6,7 @@ const Mailgun = require("mailgun.js");
 const mailgun = new Mailgun(formData);
 const mg = mailgun.client({
   username: "ibrahim",
-  key: "45130fbc01bb7e9bb5ad347bd254331e-18e06deb-2e5f8a7a",
+  key: process.env.MAILGUN_API_KEY,
 });
 
 const app = express();
@@ -34,6 +34,6 @@ app.all("*", (req, res) => {
   res.status(404).json("Cette route n'existe pas");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.Port, () => {
   console.log("Server started");
 });
