@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire de coontact</title>
+    <link href="Css/reset.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="Js/main.js"></script>
+  </head>
+
+  <body>
+    <h1 class="beauty">Nourah la plus belle</h1>
+    <button id="appuyer">Afficher le texte</button>
+
+    <form id="contact-form">
+      <p>Formulaire de Contact</p>
+      <input type="text" placeholder="Prénom" name="firstname" id="firstname" />
+      <input type="text" placeholder="lastname" name="lastname" id="lastname" />
+      <input type="email" placeholder="email" name="email" id="email" />
+      <input type="text" placeholder="Objet" name="object" id="object" />
+      <textarea
+        name="message"
+        placeholder="Veuillez entrer votre message"
+        id="message"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <input type="submit" value="Envoyer le message" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  background-color: #5c47d3;
+  width: 300px;
+  margin: auto;
+}
+form {
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 100px;
+}
+input {
+  margin: 5px;
+}
+form p {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.submit {
+  background-color: #5c47d3;
+  color: white;
+  padding: 10px;
+}
+
+.beauty {
+  display: none;
+}
+.display {
+  display: block;
+}
+#appuyer {
+  width: 100px;
+}
