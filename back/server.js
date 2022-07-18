@@ -18,9 +18,9 @@ app.post("/send-email", (req, res) => {
   console.log(req.body);
   try {
     mg.messages
-      .create("sandboxcad081bb1f8f4396919c5d94aeebf600.mailgun.org", {
+      .create("sandbox5a11cb6a346e46cda4baf2e728ee8db3.mailgun.org", {
         from: `${req.body.firstname} ${req.body.lastname} <${req.body.email}>`,
-        to: "veroullage@hotmail.fr",
+        to: "ibravoch3011@gmail.com",
         objet: req.body.object,
         text: req.body.message,
       })
@@ -35,6 +35,6 @@ app.all("*", (req, res) => {
   res.status(404).json("Cette route n'existe pas");
 });
 
-app.listen(process.env.Port, () => {
-  console.log("Server started");
+app.listen(process.env.PORT, () => {
+  console.log("Server is gooo");
 });
